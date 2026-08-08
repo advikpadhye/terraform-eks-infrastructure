@@ -1,0 +1,32 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+terraform.tfstate
+terraform.tfstate.backup
+
+.vscode/
+.idea/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+
+# Variable files containing secrets
+*.auto.tfvars
+override.tf
+override.tf.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
