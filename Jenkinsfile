@@ -1,6 +1,6 @@
 pipeline {
 
-  agent any {
+  agent any 
 
   environment {
      AWS_DEFAULT_REGION = 'ap-south-1'
@@ -8,7 +8,7 @@ pipeline {
      }
 
   stages {
-    stege ("git checkout") {
+    stage ("git checkout") {
 
       steps {
         checkout scm
@@ -55,8 +55,9 @@ pipeline {
 	}
       }	
 
-   }
-}
+  }
+
+
 
 
 
