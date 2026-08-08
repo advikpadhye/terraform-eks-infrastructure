@@ -53,16 +53,14 @@ pipeline {
       steps {
         sh "terraform plan -var-file=terraform.tfvars -out=tfplan"
 	}
-      }	
+      }
 
+
+    stage("terraform apply the infra") {
+      steps {
+        sh "terraform apply --auto-approve tfplan"
+	}
+     }	
   }
 }
-
-
-
-
-
-
-
-
 
