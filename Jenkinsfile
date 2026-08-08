@@ -58,7 +58,7 @@ pipeline {
 
     stage("terraform apply the infra") {
       steps {
-        sh "terraform apply --auto-approve tfplan"
+        sh "terraform destroy --auto-approve tfplan"
 	}
      }	
   }
